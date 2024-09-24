@@ -48,7 +48,7 @@ jobs:
         uses: stegzilla/discord-notify@v2
         if: failure()
         with:
-          message: ${{github.event.head_commit.message}}
+          message: commit ${{github.event.head_commit.url}} by samapa broke the build
           webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
           title: Build failed
   tag_release:
