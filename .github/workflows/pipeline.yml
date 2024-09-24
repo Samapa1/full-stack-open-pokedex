@@ -22,8 +22,8 @@ jobs:
         run: npm run eslint
       - name: build
         run: npm run build
-      - name: tes
-        run: npm run test
+      - name: test
+        run: npm run tes
       - name: e2e tests 1
         run: npx playwright install --with-deps
       - name: e2e test 2
